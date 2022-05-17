@@ -3,6 +3,7 @@ This is a short presentation for the sorting and complexty as concepts.
 
 ## First, complexity.
 Complexity of an algorithm is a measure of the amount of time and/or space required by an algorithm for an input of given size (n).
+### Time complexity
 There are a lot of variables that effect the run time of anlgorithm, such as:
 * The representation of abstract data types (ADT's):
 	* ADT's are almost what we call, user-defined data types.
@@ -26,4 +27,11 @@ If we consider that every instruction takes 1 second to be executed (of course i
 
 ![alt text](https://github.com/MGS15/Sorting-and-Complexity/blob/main/imgs/constant-growth-01.png?raw=true)
 
-The result of the function **f** is what we called the **Big-O notation**, 
+### Big-O notation
+The result of the function **f** is what we called the **Big-O notation**, and in our example it is expressed like ``O(n)``, **(Big-O of n)**, and in the previous example we can say tha time complexety of our algorethm is  big-O of, which means that the amount of time required to finsih the function properly (t) is increasing in proportion to number of inputs (n).
+There are a lot of "Big-O notations" the most common once are:
+* **O(n)**: Big-O of n or ``f(n) = n`` as we mentioned above.
+* **O(1)**: Big-O of 1 or ``f(n) = a`` where ``a`` is a constant, O(1) says that there is no runtime growth (or complexity growth) of a given algorithm regardless of the input, which means the amount of time required by a function is **a** if the number of inputs **n** is 1 or 10 or 1 million. In complex algorithms big-O of 1 is usually ignored since it's a constant.
+
+![alt text](https://github.com/MGS15/Sorting-and-Complexity/blob/main/imgs/O(1).png?raw=true)
+
