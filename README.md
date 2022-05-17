@@ -23,5 +23,7 @@ Actually, we can't, but what we can do is to calculate the growth of the runtime
 		return num
 ```
 If we consider that every instruction takes 1 second to be executed (of course it takes much less time), we will need to wait **n** seconds for the results, but as I mentioned above, we can't really calculate the time required so we calculate the the growth of the runtime. For our example, if we ignored declaration and return statement because they take a constant amount of time, we will see that that the time takes to finish the process is increasing constantly as we add more inputs, for example if there are 10 inputs, the time required is 10 units of time, or in other words ``f(n) = n``.
-![alt text](https://github.com/MGS15/Sorting-and-Complexity/imgs/constant-growth-01.png?raw=true)
+
+![alt text](https://github.com/MGS15/Sorting-and-Complexity/blob/main/imgs/constant-growth-01.png?raw=true)
+
 The result of the function **f** is what we called the **Big-O notation**, 
