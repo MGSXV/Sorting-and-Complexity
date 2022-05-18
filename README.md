@@ -50,3 +50,5 @@ So let's write a
 ![alt text](https://github.com/MGS15/Sorting-and-Complexity/blob/main/imgs/Tower_of_Hanoi_.gif?raw=true)
 
 You can find a C example code of tower of hanoi **[Here](https://github.com/MGS15/Sorting-and-Complexity/blob/main/examples/tower-of-hanoi.c)**.
+
+![alt text](https://github.com/MGS15/Sorting-and-Complexity/blob/main/imgs/2-to-powerof-n.png?raw=true)
