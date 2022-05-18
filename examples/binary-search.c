@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   binary-search.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sel-kham <sel-kham@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: sel-kham <sel-kham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 18:44:29 by sel-kham          #+#    #+#             */
-/*   Updated: 2022/05/18 18:44:29 by sel-kham         ###   ########.fr       */
+/*   Updated: 2022/05/18 19:07:59 by sel-kham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	main(void)
 
 	size = sizeof(arr) / sizeof(arr[0]);
 	num = 6;
-	results = binary_search(arr, 0, 10, num);
+	results = binary_search(arr, 0, size, num);
 	if (results != -1)
 		printf("The index of %d in the array is %d.\n", num, results);
 	else
