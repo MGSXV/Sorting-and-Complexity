@@ -52,3 +52,5 @@ So let's write a
 You can find a C example code of tower of hanoi **[Here](https://github.com/MGS15/Sorting-and-Complexity/blob/main/examples/tower-of-hanoi.c)**.
 
 ![alt text](https://github.com/MGS15/Sorting-and-Complexity/blob/main/imgs/2-to-powerof-n.png?raw=true)
+
+* **O(log(n))**: Big-O of log(n), or runtime with logarithmic growth. To understand it more we will use **Binary search** as example. Let's *arr* be a sorted array with *n* elements, so we will need to repeatedly divide the search interval in half, untill we find the desired value.
