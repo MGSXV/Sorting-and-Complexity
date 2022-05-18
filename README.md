@@ -45,13 +45,8 @@ You can see how the amount of time required by the function is quickly increasin
     * You can move one disk each time.
     * You can only move the upper disk of disks stack, and placing it on the top of another stack.
     * No disk can be placed on the top of a smaller disk.
+So let's write a 
 
 ![alt text](https://github.com/MGS15/Sorting-and-Complexity/blob/main/imgs/Tower_of_Hanoi_.gif?raw=true)
 
-```
-    def calc_pennies(squates_num):
-        pennies = 1
-        i = 1
-        while i < squates_num:
-            pennies = pennies + power(2, i)
-```
+You can find a C example code of tower of hanoi **[Here](https://github.com/MGS15/Sorting-and-Complexity/blob/main/examples/tower-of-hanoi.c)**.
