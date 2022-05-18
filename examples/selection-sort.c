@@ -42,7 +42,7 @@ void	print_arr(int arr[], int len)
 	printf("\n");
 }
 
-int	main(int c, int v)
+int	main(int c, char **v)
 {
 	int	arr[] = {77, 0, -3, 16, 27, 1, 9};
 	int	size;
