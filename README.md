@@ -35,10 +35,17 @@ There are a lot of "Big-O notations" the most common ones are:
 
 ![alt text](https://github.com/MGS15/Sorting-and-Complexity/blob/main/imgs/O(1).png?raw=true)
 
-* **O(n^2)**: Big-O of n squared or ``f(n) = n^2``, this one discribes the exponential increasing. **[Selection sort](https://github.com/MGS15/Sorting-and-Complexity/blob/main/examples/selection-sort.c)** is a good example for this Big-O notation, it sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning.
+* **O(n^2)**: Big-O of n squared or ``f(n) = n^2``, this one discribes the exponential increasing. **[Insertion sort](https://github.com/MGS15/Sorting-and-Complexity/blob/main/examples/insertion-sort.c)** is a good example for this Big-O notation, it sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning.
 
 ![alt text](https://github.com/MGS15/Sorting-and-Complexity/blob/main/imgs/Big-O-of-n-squared.png?raw=true)
 
 You can see how the amount of time required by the function is quickly increasing. There are also **O(n^3)** and **O(n^x)**, where x usually the number of loops in your algorithm.
 
-* **O(2^n)**: Big-O of 2 to the power of n, where n is the number of inputs. To put you in perspective of how quickly that escelates, let's take a chess board and place 1 cent on the first square of the chess board. Then two pennies on the second square, four grains on the third, and so on. Doubling each time. You may think that doubling a penny each time is a small amount, but as soon as you know that the equation to get the total number of the pennies is ``f(x) = 2^x`` where x is the number of squares on the chessboard, there are 64 square the number of the pennies is **18,446,744,073,709,551,616** pennies or **184,467,440,737,095,516** US Dollars.
+* **O(2^n)**: Big-O of 2 to the power of n, where n is the number of inputs. To put you in perspective of how quickly that escelates, let's take a chess board and place 1 cent on the first square of the chess board. Then two pennies on the second square, four grains on the third, and so on. Doubling each time. You may think that doubling a penny each time is a small amount, but as soon as you know that the equation to get the total number of the pennies is ``f(n) = 2^n`` where x is the number of squares on the chessboard, there are 64 square the number of the pennies is **18,446,744,073,709,551,616** pennies or **184,467,440,737,095,516** US Dollars. Algorithms with running time O(2^n) are often recursive algorithms that solve a problem of size n by recursively solving two smaller problems of size n-1. Tower of hanoi problem is a good example for that, 
+```
+    def calc_pennies(squates_num):
+        pennies = 1
+        i = 1
+        while i < squates_num:
+            pennies = pennies + power(2, i)
+```
