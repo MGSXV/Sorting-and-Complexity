@@ -41,7 +41,13 @@ There are a lot of "Big-O notations" the most common ones are:
 
 You can see how the amount of time required by the function is quickly increasing. There are also **O(n^3)** and **O(n^x)**, where x usually the number of loops in your algorithm.
 
-* **O(2^n)**: Big-O of 2 to the power of n, where n is the number of inputs. To put you in perspective of how quickly that escelates, let's take a chess board and place 1 cent on the first square of the chess board. Then two pennies on the second square, four grains on the third, and so on. Doubling each time. You may think that doubling a penny each time is a small amount, but as soon as you know that the equation to get the total number of the pennies is ``f(n) = 2^n`` where x is the number of squares on the chessboard, there are 64 square the number of the pennies is **18,446,744,073,709,551,616** pennies or **184,467,440,737,095,516** US Dollars. Algorithms with running time O(2^n) are often recursive algorithms that solve a problem of size n by recursively solving two smaller problems of size n-1. Tower of hanoi problem is a good example for that, 
+* **O(2^n)**: Big-O of 2 to the power of n, where n is the number of inputs. To put you in perspective of how quickly that escelates, let's take a chess board and place 1 cent on the first square of the chess board. Then two pennies on the second square, four grains on the third, and so on. Doubling each time. You may think that doubling a penny each time is a small amount, but as soon as you know that the equation to get the total number of the pennies is ``f(n) = 2^n`` where x is the number of squares on the chessboard, there are 64 square the number of the pennies is **18,446,744,073,709,551,616** pennies or **184,467,440,737,095,516** US Dollars. Algorithms with running time O(2^n) are often recursive algorithms that solve a problem of size n by recursively solving two smaller problems of size n-1. Tower of hanoi problem is a good example for that, it's a puzzle where you have three rods and **n** disks, the objective of the puzzle is to move the entire stack to another rod, obeying the following simple rules: 
+    * You can move one disk each time.
+    * You can only move the upper disk of disks stack, and placing it on the top of another stack.
+    * No disk can be placed on the top of a smaller disk.
+
+![alt text](https://github.com/MGS15/Sorting-and-Complexity/blob/main/imgs/Tower_of_Hanoi_.gif?raw=true)
+
 ```
     def calc_pennies(squates_num):
         pennies = 1
