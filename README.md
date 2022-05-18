@@ -31,7 +31,9 @@ If we consider that every instruction takes 1 second to be executed (of course i
 The result of the function **f** is what we called the **Big-O notation**, and in our example, it is expressed like ``O(n)``, **(Big-O of n)**, and in the previous example, we can say that time complexity of our algorithm is  big-O of n, which means that the amount of time required to finish the function properly (t) is increasing in proportion to the number of inputs (n).
 There are a lot of "Big-O notations" the most common ones are:
 * **O(n)**: Big-O of n or ``f(n) = n`` as we mentioned above.
-* **O(1)**: Big-O of 1 or ``f(n) = a`` where ``a`` is a constant, O(1) says that there is no runtime growth (or complexity growth) of a given algorithm regardless of the input, which means the amount of time required by a function is **a** if the number of inputs **n** is 1 or 10 or 1 million. In complex algorithms, big-O of 1 is usually ignored since it's a constant.
+* **O(1)**: Big-O of 1 or ``f(n) = a`` where ``a`` is a constant, O(1) says that there is no runtime growth (or complexity growth) of a given algorithm regardless of the input, which means the amount of time required by a function is **a** if the number of inputs **n** is 1 or 10 or 1 million. In a complex algorithms, big-O of 1 is usually get ignored since it's a constant. A good example of an algorithm with **O(1)** is a single instrauction algorithm
 
 ![alt text](https://github.com/MGS15/Sorting-and-Complexity/blob/main/imgs/O(1).png?raw=true)
+
+* **O(n^2)**: Big-O if n squared or ``f(n) = n^2``, this one discribes the exponential increasing. **Selection sort** is a good example for this Big-O notation, it sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning.
 
