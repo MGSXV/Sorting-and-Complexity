@@ -37,7 +37,7 @@ There are a lot of "Big-O notations" the most common ones are:
 
 * **O(n^2)**: Big-O of n squared or ``f(n) = n^2``, this one discribes the exponential increasing. **[Selection sort](https://github.com/MGS15/Sorting-and-Complexity/blob/main/examples/selection-sort.c)** is a good example for this Big-O notation, it sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning.
 
-![alt text](https://github.com/MGS15/Sorting-and-Complexity/blob/main/imgs/O(sqr(2).png?raw=true)
+![alt text](https://github.com/MGS15/Sorting-and-Complexity/blob/main/imgs/O(sqr(n)).png?raw=true)
 
 You can see how the amount of time required by the function is quickly increasing. There are also **O(n^3)** and **O(n^x)**, where x usually the number of loops in your algorithm.
 
